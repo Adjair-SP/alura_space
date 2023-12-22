@@ -6,7 +6,7 @@ class Fotografia(models.Model):
     descricao = models.TextField(null=False, blank=False)
     foto = models.CharField(max_length=100, null=False, blank=False)
 
-    def _str_(self):
+    def __str__(self):
         return f"Fotografia [nome={self.nome}]"
 
 # Create your models here.
